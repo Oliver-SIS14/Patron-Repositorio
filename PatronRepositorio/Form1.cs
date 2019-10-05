@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PatronRepositorio.UI.Consultas;
+using PatronRepositorio.UI.Registros;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,20 @@ namespace PatronRepositorio
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void RegistrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form formulario = new REmpleados();
+            formulario.MdiParent = this;
+            formulario.Show();
+        }
+
+        private void ConsultasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form formulario = new CEmpleados();
+            formulario.MdiParent = this;
+            formulario.Show();
         }
     }
 }
