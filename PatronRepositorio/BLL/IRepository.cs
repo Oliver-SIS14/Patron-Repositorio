@@ -19,7 +19,7 @@ namespace PatronRepositorio.BLL
     }
 
 
-    public class RepositorioBase<T> : IDisposable, IDRepository<T> where T : class
+    public class RepositorioBase<T> : IDisposable, IRepository<T> where T : class
     {
         internal Contexto contexto;
         public RepositorioBase()
